@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="listEmailLog" version_id="10000" version_string="1.0.0"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
+<div class="block">
+	<div class="block-outer">
+		<xf:macro template="filter_macros" name="quick_filter" arg-key="{$filterKey}"
+					arg-class="block-outer-opposite" />
+	</div>
+	<div class="block-container">
+		<div class="block-body">
+			<xf:if is="!empty($logs)">
+				<xf:datalist>
+					<xf:datarow rowtype="header">
+						<xf:cell>{{phrase('emailLog_log_id')}}</xf:cell>
+						<xf:cell>{{phrase('emailLog_timestamp')}}</xf:cell>
+						<xf:cell>{{phrase('emailLog_user')}}</xf:cell>
+						<xf:cell>{{phrase('emailLog_sent_to')}}</xf:cell>
+						<xf:cell>{{phrase('emailLog_email_subject')}}</xf:cell>
+					</xf:datarow>
+					<xf:foreach loop="$logs" value="$log">
+						<xf:datarow>
+							<xf:cell>{$log.log_id}</xf:cell>
+							<xf:cell>{{date($log.timestamp, 'F j, Y - g:i:s A')}}</xf:cell>
+							<xf:cell>{$log.User.username}</xf:cell>
+							<xf:cell>{$log.email}</xf:cell>
+							<xf:cell>{$log.subject}</xf:cell>
+						</xf:datarow>
+					</xf:foreach>
+				</xf:datalist>
+			<xf:else/>
+				{{phrase('emailLog_no_mail_logged')}}
+			</xf:if>
+		</div>
+	</div>
+</div>
+<div>{{phrase('emailLog_email_log_pruned_at')}}</div>]]></template>
+</templates>

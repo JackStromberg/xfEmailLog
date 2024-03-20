@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cron>
+  <entry entry_id="emailLog" cron_class="Jack\emailLog\XF\Cron\EmailLog" cron_method="runPruneEmailLog" active="1"><![CDATA[{"day_type":"dom","dom":[-1],"hours":[23],"minutes":[30]}]]></entry>
+</cron>

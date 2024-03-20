@@ -1,0 +1,14 @@
+{
+    "legacy_addon_id": "",
+    "title": "Jack - Email Log",
+    "description": "This add-on logs emails initiated by your website.",
+    "version_id": 10000,
+    "version_string": "1.0.0",
+    "dev": "Jack Stromberg",
+    "dev_url": "https://jackstromberg.com/",
+    "faq_url": "",
+    "support_url": "https://github.com/JackStromberg/xfEmailLog",
+    "extra_urls": [],
+    "require": [],
+    "icon": ""
+}

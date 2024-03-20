@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="admin_navigation.emailLog" version_id="10000" version_string="1.0.0"><![CDATA[Email Log]]></phrase>
+  <phrase title="admin_permission.emailLog" version_id="10000" version_string="1.0.0"><![CDATA[View Email Log]]></phrase>
+  <phrase title="cron_entry.emailLog" version_id="10000" version_string="1.0.0"><![CDATA[Prune email log]]></phrase>
+  <phrase title="emailLog_emailLog" version_id="10000" version_string="1.0.0"><![CDATA[Email Log]]></phrase>
+  <phrase title="emailLog_email_log_pruned_at" version_id="10000" version_string="1.0.0"><![CDATA[Email log is pruned every day at 23:30.]]></phrase>
+  <phrase title="emailLog_email_subject" version_id="10000" version_string="1.0.0"><![CDATA[Email Subject]]></phrase>
+  <phrase title="emailLog_log_id" version_id="10000" version_string="1.0.0"><![CDATA[Log Id]]></phrase>
+  <phrase title="emailLog_no_mail_logged" version_id="10000" version_string="1.0.0"><![CDATA[No emails have been logged.]]></phrase>
+  <phrase title="emailLog_sent_to" version_id="10000" version_string="1.0.0"><![CDATA[Sent to email address]]></phrase>
+  <phrase title="emailLog_timestamp" version_id="10000" version_string="1.0.0"><![CDATA[Timestamp]]></phrase>
+  <phrase title="emailLog_user" version_id="10000" version_string="1.0.0"><![CDATA[Sent to user]]></phrase>
+  <phrase title="option.pruneLogAfterXDays" version_id="10000" version_string="1.0.0"><![CDATA[Log age in days]]></phrase>
+  <phrase title="option_explain.pruneLogAfterXDays" version_id="10000" version_string="1.0.0"><![CDATA[Logs older than the amount of days listed will be pruned.]]></phrase>
+  <phrase title="option_group.emailLog" version_id="10000" version_string="1.0.0"><![CDATA[Email Log]]></phrase>
+  <phrase title="option_group_description.emailLog" version_id="10000" version_string="1.0.0"><![CDATA[Specify email log configuration.]]></phrase>
+</phrases>
