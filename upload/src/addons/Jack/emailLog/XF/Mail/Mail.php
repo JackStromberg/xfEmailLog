@@ -7,21 +7,11 @@ use function count;
 class Mail extends XFCP_Mail
 {
 
-    public function queue()
+	public function setContent($subject, $htmlBody, $textBody = null) : Mail
 	{
-		if ($this->setupError)
-		{
-			$this->logSetupError($this->setupError);
-			return false;
-		}
+    	$mail = parent::setContent($subject, $htmlBody, $textBody);
 
-        $message = $this->getSendableMessage();
-		if (!$message->getTo())
-		{
-			return false;
-		}
-
-		$emails = $message->getTo();
+		$emails = $mail->message->getTo();
 		if (count($emails) > 0)
 		{
 			foreach($emails as $emailAddress => $username){
@@ -29,13 +19,13 @@ class Mail extends XFCP_Mail
 				$user = \XF::finder('XF:User')->where('username', $username)->fetchOne();
 				$log->user_id = $user->user_id;
 				$log->email = $emailAddress;
-				$log->subject = $message->getSubject();
+				$log->subject = $mail->message->getSubject();
 				$log->save();
 			}
 			
 		}
 
-		return $this->mailer->queue($message);
-    }
+		return $mail;
+	}
 
 }
