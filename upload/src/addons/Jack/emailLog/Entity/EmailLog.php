@@ -16,7 +16,7 @@ class EmailLog extends Entity
 		$structure->primaryKey = 'log_id';
 		$structure->columns = [
 			'log_id' => ['type' => self::UINT, 'autoIncrement' => true, 'nullable' => true],
-			'user_id' => ['type' => self::UINT, 'default' => \XF::visitor()->user_id, 'nullable' => false],
+			'user_id' => ['type' => self::UINT, 'default' => 0, 'nullable' => false],
 			'email' => ['type' => self::STR, 'default' => '', 'nullable' => false],
 			'subject' => ['type' => self::STR, 'default' => '', 'required' => true],
 			'timestamp' => ['type' => self::UINT, 'default' => \XF::$time],

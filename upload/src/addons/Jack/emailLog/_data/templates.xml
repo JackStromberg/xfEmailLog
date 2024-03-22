@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="listEmailLog" version_id="10000" version_string="1.0.0"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
+  <template type="admin" title="listEmailLog" version_id="1010000" version_string="1.1.0"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
 <div class="block">
 	<div class="block-outer">
 		<xf:macro template="filter_macros" name="quick_filter" arg-key="{$filterKey}"
@@ -21,7 +21,7 @@
 						<xf:datarow>
 							<xf:cell>{$log.log_id}</xf:cell>
 							<xf:cell>{{date($log.timestamp, 'F j, Y - g:i:s A')}}</xf:cell>
-							<xf:cell>{$log.User.username}</xf:cell>
+							<xf:cell>{{$log.User.username ?: '-'}}</xf:cell>
 							<xf:cell>{$log.email}</xf:cell>
 							<xf:cell>{$log.subject}</xf:cell>
 						</xf:datarow>
