@@ -1,10 +1,10 @@
 {
-    "src/addons/Jack/emailLog/addon.json": "413bf59a97e65895ec4e0c0539aa03cc991524645e64b8ffaf0f48be29f5fcd9",
+    "src/addons/Jack/emailLog/addon.json": "6e2e8ef842a1a3061aa2556877098ae67ca029c75a8357422f19972116164461",
     "src/addons/Jack/emailLog/Admin/Controller/EmailLog.php": "79f1cadefe722feca1fedcee6dc940decc5204b0217ff81d8f7f4bcc3447df4b",
     "src/addons/Jack/emailLog/Entity/EmailLog.php": "43c3a8b56ec25c090fafd6cf0ce37d6406cc5caefc0161c891d91dfbb79ba81a",
     "src/addons/Jack/emailLog/Setup.php": "5cace0e338eb9e5697eb4d385b5ea005883ddd073deeebbb316c0c5d211d026f",
     "src/addons/Jack/emailLog/XF/Cron/EmailLog.php": "ab09f435935dac5acb91417d02ec57fb00467abfd710e82081c0fd8c5d00da25",
-    "src/addons/Jack/emailLog/XF/Mail/Mail.php": "fde11dc452b1d53f3c61f1d97dba4374892073e522a6c73aa6fba8564538e778",
+    "src/addons/Jack/emailLog/XF/Mail/Mail.php": "e8c11cc932905a4b258d93a804f27b3507a56f7cc54e40079e263492e7f0acda",
     "src/addons/Jack/emailLog/_data/activity_summary_definitions.xml": "99d8c2563a31320d66f958fc8bda78613545f5f7959bb3cf5318805e3a3c39d2",
     "src/addons/Jack/emailLog/_data/admin_navigation.xml": "2c8d14879739c8fb9b17ae26dd94e3469dc9790afd59b0a12842e4291fed94a1",
     "src/addons/Jack/emailLog/_data/admin_permission.xml": "d14c804018430d64659354580d11252eefbd9d6be01e3a982c17e72a35bd7329",

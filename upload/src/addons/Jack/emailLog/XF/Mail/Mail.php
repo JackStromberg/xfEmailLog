@@ -19,7 +19,9 @@ class Mail extends XFCP_Mail
 				$log = \XF::em()->create('Jack\emailLog:EmailLog');
 				if(!empty($username)){
 					$user = \XF::finder('XF:User')->where('username', $username)->fetchOne();
-					$log->user_id = $user->user_id;
+					// Account for add-ons that delete the user but send an email with an associated username
+					if(!empty($user))
+						$log->user_id = $user->user_id;
 				}
 				$log->email = $emailAddress;
 				$log->subject = $mail->message->getSubject();
