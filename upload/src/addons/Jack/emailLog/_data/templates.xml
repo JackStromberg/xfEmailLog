@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="listEmailLog" version_id="1010000" version_string="1.1.0"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
+  <template type="admin" title="listEmailLog" version_id="1010300" version_string="1.1.3"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
 <div class="block">
 	<div class="block-outer">
 		<xf:macro template="filter_macros" name="quick_filter" arg-key="{$filterKey}"
+					arg-ajax="{{ link('emailLog', null, {'criteria': $criteria, 'order': $order, 'direction': $direction}) }}"
 					arg-class="block-outer-opposite" />
 	</div>
 	<div class="block-container">
@@ -31,7 +32,14 @@
 				{{phrase('emailLog_no_mail_logged')}}
 			</xf:if>
 		</div>
+		<div class="block-footer block-footer--split">
+			<span class="block-footer-counter">{{ display_totals($logs, $total) }}</span>
+		</div>
 	</div>
+	<xf:pagenav page="{$page}" perpage="{$limitPerPage}" total="{$total}"
+			link="emailLog"
+			params=""
+			wrapperclass="js-filterHide block-outer block-outer--after" />
 </div>
 <div>{{phrase('emailLog_email_log_pruned_at')}}</div>]]></template>
 </templates>
