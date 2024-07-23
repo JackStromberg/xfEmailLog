@@ -1,6 +1,6 @@
 {
-    "src/addons/Jack/emailLog/addon.json": "6e2e8ef842a1a3061aa2556877098ae67ca029c75a8357422f19972116164461",
-    "src/addons/Jack/emailLog/Admin/Controller/EmailLog.php": "79f1cadefe722feca1fedcee6dc940decc5204b0217ff81d8f7f4bcc3447df4b",
+    "src/addons/Jack/emailLog/addon.json": "924a9d8e0dbbb73a09bd11b016d2cab3c60d88143513f95a763901441da76d7b",
+    "src/addons/Jack/emailLog/Admin/Controller/EmailLog.php": "c44ce649ca3efd0fa3a1ab023434f71ce603cf542c10aa755d3a942e75c70e41",
     "src/addons/Jack/emailLog/Entity/EmailLog.php": "43c3a8b56ec25c090fafd6cf0ce37d6406cc5caefc0161c891d91dfbb79ba81a",
     "src/addons/Jack/emailLog/Setup.php": "5cace0e338eb9e5697eb4d385b5ea005883ddd073deeebbb316c0c5d211d026f",
     "src/addons/Jack/emailLog/XF/Cron/EmailLog.php": "ab09f435935dac5acb91417d02ec57fb00467abfd710e82081c0fd8c5d00da25",
@@ -28,7 +28,7 @@
     "src/addons/Jack/emailLog/_data/routes.xml": "51c826ac86dac58fb0853eb2c4ed398e391a1c62a62a234b89928910d0bf8a2b",
     "src/addons/Jack/emailLog/_data/style_properties.xml": "8b8690a8512f01f219dd2da76e3d0c5f62afc1f317b87794a7331c859c36a7a8",
     "src/addons/Jack/emailLog/_data/style_property_groups.xml": "68e1879cb3846c42d978487aa8d5145ff3335fc39e58016878824d5cf3fd684c",
-    "src/addons/Jack/emailLog/_data/templates.xml": "56aaf4c936b9b7d47394dbad3223203f7393dc9c5d28cd375ce1e87c159421ae",
+    "src/addons/Jack/emailLog/_data/templates.xml": "7be5bd342e5e453c620d349dd0756eea5d0f18aa6efb3a7e822ceda85a2c74db",
     "src/addons/Jack/emailLog/_data/template_modifications.xml": "3b54b7df00a6a4a18c5e012b6e2588e35c23aaa13a5fc227f08646a97590d778",
     "src/addons/Jack/emailLog/_data/widget_definitions.xml": "37e46965256430f24004c2e7f08ba08f9b0d1cbcc4d70e84b3f4e3ffb713e64b",
     "src/addons/Jack/emailLog/_data/widget_positions.xml": "a29cee66134f6bc5d75ed9df1eef21096c24401915c5b5c774389c3d7bb2d5b3"
