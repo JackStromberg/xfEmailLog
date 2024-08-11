@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="admin" title="listEmailLog" version_id="1010300" version_string="1.1.3"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
+  <template type="admin" title="listEmailLog" version_id="1020000" version_string="1.2.0"><![CDATA[<xf:title>{{phrase('emailLog_emailLog')}}</xf:title>
 <div class="block">
 	<div class="block-outer">
 		<xf:macro template="filter_macros" name="quick_filter" arg-key="{$filterKey}"
@@ -14,7 +14,7 @@
 					<xf:datarow rowtype="header">
 						<xf:cell>{{phrase('emailLog_log_id')}}</xf:cell>
 						<xf:cell>{{phrase('emailLog_timestamp')}}</xf:cell>
-						<xf:cell>{{phrase('emailLog_user')}}</xf:cell>
+						<xf:cell colspan="2">{{phrase('emailLog_user')}}</xf:cell>
 						<xf:cell>{{phrase('emailLog_sent_to')}}</xf:cell>
 						<xf:cell>{{phrase('emailLog_email_subject')}}</xf:cell>
 					</xf:datarow>
@@ -22,7 +22,17 @@
 						<xf:datarow>
 							<xf:cell>{$log.log_id}</xf:cell>
 							<xf:cell>{{date($log.timestamp, 'F j, Y - g:i:s A')}}</xf:cell>
-							<xf:cell>{{$log.User.username ?: '-'}}</xf:cell>
+							<xf:if is="!empty($log.User.username)">
+								<xf:cell class="dataList-cell--min dataList-cell--image dataList-cell--imageSmall"
+								href="{{ link('users/edit', $log.User) }}">
+									<xf:avatar user="$log.User" size="s" href="" />
+								</xf:cell>
+								<xf:main href="{{ link('users/edit', $log.User) }}">
+									<xf:label><xf:username user="$log.User" rich="true" notooltip="true" href="" /></xf:label>
+								</xf:main>
+							<xf:else/>
+								<xf:cell colspan="2">-</xf:cell>
+							</xf:if>
 							<xf:cell>{$log.email}</xf:cell>
 							<xf:cell>{$log.subject}</xf:cell>
 						</xf:datarow>

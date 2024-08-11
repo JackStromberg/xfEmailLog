@@ -1,10 +1,10 @@
 {
-    "src/addons/Jack/emailLog/addon.json": "924a9d8e0dbbb73a09bd11b016d2cab3c60d88143513f95a763901441da76d7b",
+    "src/addons/Jack/emailLog/addon.json": "85dc2f5e18f01ab5457bd97c0ee66829786ff04a623f94702a089d5decf48128",
     "src/addons/Jack/emailLog/Admin/Controller/EmailLog.php": "c44ce649ca3efd0fa3a1ab023434f71ce603cf542c10aa755d3a942e75c70e41",
     "src/addons/Jack/emailLog/Entity/EmailLog.php": "43c3a8b56ec25c090fafd6cf0ce37d6406cc5caefc0161c891d91dfbb79ba81a",
     "src/addons/Jack/emailLog/Setup.php": "5cace0e338eb9e5697eb4d385b5ea005883ddd073deeebbb316c0c5d211d026f",
     "src/addons/Jack/emailLog/XF/Cron/EmailLog.php": "ab09f435935dac5acb91417d02ec57fb00467abfd710e82081c0fd8c5d00da25",
-    "src/addons/Jack/emailLog/XF/Mail/Mail.php": "e8c11cc932905a4b258d93a804f27b3507a56f7cc54e40079e263492e7f0acda",
+    "src/addons/Jack/emailLog/XF/Mail/Mail.php": "3dac62d7eb4dffe01bff7189b53b0289179b8743c494a809d21cb2a00ba455c6",
     "src/addons/Jack/emailLog/_data/activity_summary_definitions.xml": "99d8c2563a31320d66f958fc8bda78613545f5f7959bb3cf5318805e3a3c39d2",
     "src/addons/Jack/emailLog/_data/admin_navigation.xml": "2c8d14879739c8fb9b17ae26dd94e3469dc9790afd59b0a12842e4291fed94a1",
     "src/addons/Jack/emailLog/_data/admin_permission.xml": "d14c804018430d64659354580d11252eefbd9d6be01e3a982c17e72a35bd7329",
@@ -28,7 +28,7 @@
     "src/addons/Jack/emailLog/_data/routes.xml": "51c826ac86dac58fb0853eb2c4ed398e391a1c62a62a234b89928910d0bf8a2b",
     "src/addons/Jack/emailLog/_data/style_properties.xml": "8b8690a8512f01f219dd2da76e3d0c5f62afc1f317b87794a7331c859c36a7a8",
     "src/addons/Jack/emailLog/_data/style_property_groups.xml": "68e1879cb3846c42d978487aa8d5145ff3335fc39e58016878824d5cf3fd684c",
-    "src/addons/Jack/emailLog/_data/templates.xml": "7be5bd342e5e453c620d349dd0756eea5d0f18aa6efb3a7e822ceda85a2c74db",
+    "src/addons/Jack/emailLog/_data/templates.xml": "b1379455e9f026e6729bc8a20d1b893bcc94e9e7b14180102473c12099de7599",
     "src/addons/Jack/emailLog/_data/template_modifications.xml": "3b54b7df00a6a4a18c5e012b6e2588e35c23aaa13a5fc227f08646a97590d778",
     "src/addons/Jack/emailLog/_data/widget_definitions.xml": "37e46965256430f24004c2e7f08ba08f9b0d1cbcc4d70e84b3f4e3ffb713e64b",
     "src/addons/Jack/emailLog/_data/widget_positions.xml": "a29cee66134f6bc5d75ed9df1eef21096c24401915c5b5c774389c3d7bb2d5b3"
